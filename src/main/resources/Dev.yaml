@@ -1,0 +1,6 @@
+DB:
+  host: "inventory-related-data.coqgdiwy3dba.ap-south-1.rds.amazonaws.com"
+  port: "3306"
+  name: "root"
+  password: "Viper007_"
+  schema:  "InsuranceApi"

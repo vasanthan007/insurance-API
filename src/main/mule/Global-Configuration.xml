@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="48a1062d-dfc1-4126-846e-8d877a810a35" >
+		<db:my-sql-connection host="${DB.host}" port="${DB.port}" user="${DB.name}" password="${DB.password}" database="${DB.schema}" />
+	</db:config>
+	<configuration-properties doc:name="Configuration properties" doc:id="f323154b-1345-4e16-8fa0-7958b1d22342" file="Dev.yaml" />
+</mule>
